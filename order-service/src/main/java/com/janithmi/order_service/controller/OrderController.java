@@ -1,10 +1,13 @@
 package com.janithmi.order_service.controller;
 
 import com.janithmi.order_service.dto.OrderRequest;
+import com.janithmi.order_service.dto.OrderResponse;
 import com.janithmi.order_service.service.OrderService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
+
+import java.util.List;
 
 @RestController
 @RequestMapping("/api/order")
@@ -17,5 +20,11 @@ public class OrderController {
         orderService.placeNewOrder(orderRequest);
         return "order placed successfully";
 
+    }
+
+    @GetMapping
+    @ResponseStatus(HttpStatus.OK)
+    private List<OrderResponse> getAllOrders() {
+        return orderService.getAllOrders();
     }
 }
