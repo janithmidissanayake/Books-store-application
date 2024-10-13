@@ -4,11 +4,20 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4ee1e32c-8b62-4e5c-a77a-806e4417fb01" name="Changes" comment="order request">
-      <change afterPath="$PROJECT_DIR$/order-service/src/main/java/com/janithmi/order_service/dto/OrderResponse.java" afterDir="false" />
+    <list default="true" id="4ee1e32c-8b62-4e5c-a77a-806e4417fb01" name="Changes" comment="order implementation">
+      <change afterPath="$PROJECT_DIR$/inventory-service/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/inventory-service/src/main/java/com/janithmi/inventory_service/InventoryServiceApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/inventory-service/src/main/java/com/janithmi/inventory_service/controller/InventoryController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/inventory-service/src/main/java/com/janithmi/inventory_service/dto/InventoryRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/inventory-service/src/main/java/com/janithmi/inventory_service/dto/InventoryResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/inventory-service/src/main/java/com/janithmi/inventory_service/model/Inventory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/inventory-service/src/main/java/com/janithmi/inventory_service/repository/InventoryRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/inventory-service/src/main/java/com/janithmi/inventory_service/service/InventoryService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/inventory-service/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/inventory-service/src/test/java/com/janithmi/inventory_service/InventoryServiceApplicationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/order-service/src/main/java/com/janithmi/order_service/controller/OrderController.java" beforeDir="false" afterPath="$PROJECT_DIR$/order-service/src/main/java/com/janithmi/order_service/controller/OrderController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/order-service/src/main/java/com/janithmi/order_service/service/OrderService.java" beforeDir="false" afterPath="$PROJECT_DIR$/order-service/src/main/java/com/janithmi/order_service/service/OrderService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,33 +57,36 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Attach to process.localhost:8081.executor": "ProcessAttachDebug",
-    "HTTP Request.generated-requests | #2.executor": "Run",
-    "Maven.books-store-application [clean].executor": "Run",
-    "RequestMappingsPanelOrder0": "0",
-    "RequestMappingsPanelOrder1": "1",
-    "RequestMappingsPanelWidth0": "75",
-    "RequestMappingsPanelWidth1": "75",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "Spring Boot.CatalogServiceApplication.executor": "Run",
-    "Spring Boot.OrderServiceApplication.executor": "Run",
-    "git-widget-placeholder": "master",
-    "ignore.virus.scanning.warn.message": "true",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/HP/Downloads/books-store-application/order-service",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "run.code.analysis.last.selected.profile": "pProject Default",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Attach to process.localhost:8081.executor&quot;: &quot;ProcessAttachDebug&quot;,
+    &quot;HTTP Request.generated-requests | #2.executor&quot;: &quot;Run&quot;,
+    &quot;Maven.books-store-application [clean].executor&quot;: &quot;Run&quot;,
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;Spring Boot.CatalogServiceApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.InventoryServiceApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.OrderServiceApplication.executor&quot;: &quot;Run&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/HP/Downloads/books-store-application/inventory-service&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;,
+    &quot;run.configurations.included.in.services&quot;: &quot;true&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\HP\Downloads\books-store-application\inventory-service" />
       <recent name="C:\Users\HP\Downloads\books-store-application\order-service" />
       <recent name="C:\Users\HP\Downloads\books-store-application\catalog-service" />
     </key>
@@ -84,7 +96,7 @@
       <command value="mvn clean" />
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.OrderServiceApplication">
+  <component name="RunManager" selected="Spring Boot.InventoryServiceApplication">
     <configuration default="true" type="JetRunConfigurationType">
       <module name="books-store-application" />
       <method v="2">
@@ -105,6 +117,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="InventoryServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="inventory-service" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.janithmi.inventory_service.InventoryServiceApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="OrderServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <module name="order-service" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.janithmi.order_service.OrderServiceApplication" />
@@ -119,6 +138,7 @@
       </method>
     </configuration>
     <list>
+      <item itemvalue="Spring Boot.InventoryServiceApplication" />
       <item itemvalue="Spring Boot.CatalogServiceApplication" />
       <item itemvalue="Spring Boot.OrderServiceApplication" />
     </list>
@@ -153,6 +173,9 @@
       <workItem from="1727677051219" duration="5571000" />
       <workItem from="1727758285931" duration="818000" />
       <workItem from="1728114139489" duration="13417000" />
+      <workItem from="1728190967725" duration="814000" />
+      <workItem from="1728623418019" duration="2959000" />
+      <workItem from="1728704276233" duration="9231000" />
     </task>
     <task id="LOCAL-00001" summary="initialize the web store project">
       <option name="closed" value="true" />
@@ -170,7 +193,15 @@
       <option name="project" value="LOCAL" />
       <updated>1727758344241</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="order implementation">
+      <option name="closed" value="true" />
+      <created>1728191076518</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1728191076518</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -179,9 +210,19 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="initialize the web store project" />
     <MESSAGE value="order request" />
-    <option name="LAST_COMMIT_MESSAGE" value="order request" />
+    <MESSAGE value="order implementation" />
+    <option name="LAST_COMMIT_MESSAGE" value="order implementation" />
   </component>
   <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/order-service/src/main/java/com/janithmi/order_service/OrderServiceApplication.java</url>
+          <line>6</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
     <pin-to-top-manager>
       <pinned-members>
         <PinnedItemInfo parentTag="com.janithmi.order_service.service.OrderService" memberName="orderRepository" />
