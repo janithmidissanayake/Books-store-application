@@ -1,4 +1,4 @@
-package com.janithmi.inventory_service.dto;
+package com.janithmi.order_service.dto;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;

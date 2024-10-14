@@ -11,5 +11,10 @@
       <user-name>root</user-name>
       <schema-mapping />
     </data-source>
+    <data-source name="inventory_service@localhost" uuid="9e5ed97b-dd4e-4ab8-810b-3492010a8d4b">
+      <database-info product="" version="" jdbc-version="" driver-name="" driver-version="" dbms="MYSQL" />
+      <user-name>root</user-name>
+      <schema-mapping />
+    </data-source>
   </component>
 </project>
