@@ -4,19 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4ee1e32c-8b62-4e5c-a77a-806e4417fb01" name="Changes" comment="inventory implementation">
-      <change afterPath="$PROJECT_DIR$/order-service/src/main/java/com/janithmi/order_service/config/WebClientConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/order-service/src/main/java/com/janithmi/order_service/dto/InventoryResponse.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/inventory-service/src/main/java/com/janithmi/inventory_service/InventoryServiceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/inventory-service/src/main/java/com/janithmi/inventory_service/InventoryServiceApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/inventory-service/src/main/java/com/janithmi/inventory_service/controller/InventoryController.java" beforeDir="false" afterPath="$PROJECT_DIR$/inventory-service/src/main/java/com/janithmi/inventory_service/controller/InventoryController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/inventory-service/src/main/java/com/janithmi/inventory_service/dto/InventoryResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/inventory-service/src/main/java/com/janithmi/inventory_service/dto/InventoryResponse.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/inventory-service/src/main/java/com/janithmi/inventory_service/repository/InventoryRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/inventory-service/src/main/java/com/janithmi/inventory_service/repository/InventoryRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/inventory-service/src/main/java/com/janithmi/inventory_service/service/InventoryService.java" beforeDir="false" afterPath="$PROJECT_DIR$/inventory-service/src/main/java/com/janithmi/inventory_service/service/InventoryService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/order-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/order-service/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/order-service/src/main/java/com/janithmi/order_service/service/OrderService.java" beforeDir="false" afterPath="$PROJECT_DIR$/order-service/src/main/java/com/janithmi/order_service/service/OrderService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/order-service/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/order-service/src/main/resources/application.properties" afterDir="false" />
-    </list>
+    <list default="true" id="4ee1e32c-8b62-4e5c-a77a-806e4417fb01" name="Changes" comment="inventory and order synchronization" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -74,7 +62,7 @@
     &quot;git-widget-placeholder&quot;: &quot;master&quot;,
     &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
     &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/HP/Downloads/books-store-application/inventory-service&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/HP/Downloads/expense tracker-backend&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -103,7 +91,7 @@
       <command value="mvn clean" />
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.OrderServiceApplication">
+  <component name="RunManager" selected="Spring Boot.CatalogServiceApplication">
     <configuration default="true" type="JetRunConfigurationType">
       <module name="books-store-application" />
       <method v="2">
@@ -184,7 +172,11 @@
       <workItem from="1728623418019" duration="2959000" />
       <workItem from="1728704276233" duration="10168000" />
       <workItem from="1728871979586" duration="18825000" />
-      <workItem from="1728919697468" duration="25000" />
+      <workItem from="1728919697468" duration="1610000" />
+      <workItem from="1729239449919" duration="58000" />
+      <workItem from="1729252990217" duration="7959000" />
+      <workItem from="1730896180418" duration="799000" />
+      <workItem from="1742191486946" duration="1074000" />
     </task>
     <task id="LOCAL-00001" summary="initialize the web store project">
       <option name="closed" value="true" />
@@ -218,7 +210,15 @@
       <option name="project" value="LOCAL" />
       <updated>1728842043554</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="inventory and order synchronization">
+      <option name="closed" value="true" />
+      <created>1728919810368</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1728919810368</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -229,7 +229,8 @@
     <MESSAGE value="order request" />
     <MESSAGE value="order implementation" />
     <MESSAGE value="inventory implementation" />
-    <option name="LAST_COMMIT_MESSAGE" value="inventory implementation" />
+    <MESSAGE value="inventory and order synchronization" />
+    <option name="LAST_COMMIT_MESSAGE" value="inventory and order synchronization" />
   </component>
   <component name="XDebuggerManager">
     <pin-to-top-manager>
